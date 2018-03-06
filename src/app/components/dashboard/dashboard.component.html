@@ -1,0 +1,160 @@
+<div class="jumbotron text-center image">
+    <h1 class="down" *ngIf="user">{{user?.username}}'s dashboard</h1>
+</div>
+
+<div class="center1" *ngIf="user">
+    <p class="welcome">Welcome, {{user?.username}}!</p>
+    <hr class="dashLine" />    
+</div>
+
+<div class="currencyContainer">
+    <h2 class="center">My Currencies</h2>
+    <ul class="flex-container">
+
+        <div class="dashcard">
+            <div class="dashcard-body">
+                <h1 class="center4">BITCOIN</h1>
+                <img class="centerImage2" src="./assets/BTC.png">
+                <div class="center5" *ngIf="user">
+                    Your current <strong>Bitcoin amount:</strong> {{user?.bitcoin}}.
+                </div>
+                <div class="center5" *ngIf="btcData">
+                    Your <strong>Bitcoin collection</strong> is currently worth: ${{user?.bitcoin * btcData?.USD}}.
+                </div>
+            </div>
+        </div>
+
+        <div class="dashcard">
+            <div class="dashcard-body">
+                <h1 class="center4">ETHER</h1>
+                <img class="centerImage2" src="./assets/ETH.png">
+                <div class="center5" *ngIf="user">
+                    Your current <strong>Ether amount:</strong> {{user?.ether}}.
+                </div>
+                <div class="center5" *ngIf="ethData">
+                    Your <strong>Ether collection</strong> is currently worth: ${{user?.ether * ethData?.USD}}.
+                </div>
+            </div>
+        </div>
+
+        <div class="dashcard">
+            <div class="dashcard-body">
+                <h1 class="center4">LITECOIN</h1>
+                <img class="centerImage2" src="./assets/LTC.png">
+                <div class="center5" *ngIf="user">
+                    Your current <strong>Litecoin amount:</strong> {{user?.litecoin}}.
+                </div>
+                <div class="center5" *ngIf="ltcData">
+                    Your <strong>Litecoin collection</strong> is currently worth: ${{user?.litecoin * ltcData?.USD}}.
+                </div>
+            </div>
+        </div>
+    </ul>
+</div>
+
+<hr class="dashLine2" />
+
+<div class="priceContainer">
+<h2 class="center">Current Prices</h2>
+<ul class="flex-container">
+    <div class="dashcard">
+        <div class="dashcard-body">
+            <h1 class="center">USD</h1>
+            <img class="centerImage" src="./assets/US.png">
+            <div *ngIf="btcData">
+                <p>Current price of <strong>1 Bitcoin:</strong> ${{btcData?.USD}}</p>
+            </div>
+             <div *ngIf="ethData">
+                <p>Current price of <strong>1 Ether:</strong> ${{ethData?.USD}}</p>
+            </div>
+            <div *ngIf="ltcData">
+                <p>Current price of <strong>1 Litecoin:</strong> ${{ltcData?.USD}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashcard">
+        <div class="dashcard-body">
+            <h1 class="center">EUR</h1>
+            <img class="centerImage" src="./assets/EU.png">
+            <div *ngIf="btcData">
+                <p>Current price of <strong>1 Bitcoin:</strong> €{{btcData?.EUR}}</p>
+            </div>
+             <div *ngIf="ethData">
+                <p>Current price of <strong>1 Ether:</strong> €{{ethData?.EUR}}</p>
+            </div>
+            <div *ngIf="ltcData">
+                <p>Current price of <strong>1 Litecoin:</strong> €{{ltcData?.EUR}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashcard">
+        <div class="dashcard-body">
+            <h1 class="center">GBP</h1>
+            <img class="centerImage" src="./assets/UK.png">
+            <div *ngIf="btcData">
+                <p>Current price of <strong>1 Bitcoin:</strong> £{{btcData?.GBP}}</p>
+            </div>
+             <div *ngIf="ethData">
+                <p>Current price of <strong>1 Ether:</strong> £{{ethData?.GBP}}</p>
+            </div>
+            <div *ngIf="ltcData">
+                <p>Current price of <strong>1 Litecoin:</strong> £{{ltcData?.GBP}}</p>
+            </div>
+        </div>
+    </div>
+</ul>
+</div>
+
+<hr class="dashLine3" />
+
+<div class="chartPosition">
+<h2 class="center">Closing prices</h2>
+
+    <div style="width: 100%;">
+        <canvas baseChart [chartType]="'line'" [colors]="chartColors" [datasets]="chartData" [labels]="chartLabels" [options]="chartOptions"
+            (chartClick)="onChartClick($event)">
+        </canvas>
+    </div>
+    
+</div>
+
+<!--
+        <div class="center" *ngIf="user">
+            <div>
+                <p>
+                    <strong>Your current Bitcoin amount: {{user?.bitcoin}}.</strong>
+                </p>
+                <p>
+                    <strong>Your current Ether amount: {{user?.ether}}.</strong>
+                </p>
+                <p>
+                    <strong>Your current Litecoin amount: {{user?.litecoin}}.</strong>
+                </p>
+            </div>
+            Got more Bitcoin recently?
+            <p>
+                <button class="button" (click)="changeShowUpdate()">Update</button> your bitcoin amount.</p>
+            <div class="center" *ngIf="showUpdate">
+                <form (submit)="bitcoinSubmit()">
+                    <div class="form-group centerForm">
+                        <input type="text" [(ngModel)]="bitcoin" name="bitcoin" class="form-control">
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Update">
+                </form>
+            </div>
+    </div>
+
+
+
+        <div class="center" *ngIf="btcData">
+            Your Bitcoin collection is currently worth: ${{user?.bitcoin * btcData?.USD}}.
+        </div>
+        <div class="center" *ngIf="ethData">
+            Your Ether collection is currently worth: ${{user?.ether * ethData?.USD}}.
+        </div>
+        <div class="center" *ngIf="ltcData">
+            Your Litecoin collection is currently worth: ${{user?.litecoin * ltcData?.USD}}.
+        </div>
+    -->

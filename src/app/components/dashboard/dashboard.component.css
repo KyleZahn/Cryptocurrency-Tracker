@@ -1,0 +1,185 @@
+.welcome {
+  color: #5c5c5c;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 33px;
+  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.currencies {
+  color: #333333;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 30px;
+  color: inherit;
+}
+
+.currencyContainer{
+  position: relative;
+  top: 360px;
+}
+
+.priceContainer{
+  position: relative;
+  top: 460px;
+}
+
+.center {
+  text-align: center;
+}
+
+.center1 {
+    text-align: center;
+    position: relative;
+    top: 330px;
+}
+
+.center2 {
+  text-align: center;
+  position: relative;
+  top: 420px;
+}
+
+.center4 {
+  text-align: center;
+  font-size: 26px;
+}
+
+.center5 {
+  text-align: center;
+  max-width:227px;
+}
+
+.chartPosition{
+  position: relative;
+  top:550px;
+}
+
+.centerForm {
+    display: block;
+    margin: auto;
+    margin-bottom: 17px;
+}
+
+.centerImage {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height:17px;
+    width:32px;
+}
+
+.centerImage2 {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  height:25px;
+  width:25px;
+}
+
+.dashcard {
+    position: relative;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid;
+    border-radius: 0;
+    border-color: #2780E3 !important;
+    margin-bottom:0px;
+  }
+
+  .dashcard-body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding: 1.25rem;
+  }
+
+  .flex-container {
+    position:relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  
+  .button {
+    background:none!important;
+    color:inherit;
+    border:none; 
+    padding:0!important;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .form-group {
+      width:300px;
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0;
+    right:0.0001%;
+    width:100%;
+    height:30px;
+    padding:5px;
+    background-color:#333333;
+  }
+
+  .footText{
+    color:#ffffff;
+    text-align: center;
+  }
+
+  .dashLine{
+    width:50%;
+    border-color: #2780E3;
+  }
+
+  .dashLine2{
+    position: relative;
+    top:420px;
+    width:50%;
+    border-color: #2780E3;
+  }
+
+  .dashLine3{
+    position: relative;
+    top:520px;
+    width:50%;
+    border-color: #2780E3;
+  }
+
+  .jumbotron{
+    position: absolute;
+    height: 370px;
+    left: 0;
+    right: 0;
+    top:0px;
+  }
+
+  .image{
+    background-image:url('/assets/dashboard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+  }
+
+  .down{
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    top:130px;
+    font-weight: 600;
+    font-size: 54px;
+  }

@@ -1,0 +1,299 @@
+h1 {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #5c5c5c;
+}
+
+.section1{
+  margin-top:650px;
+  font-size: 30px;
+}
+
+.sectionDown{
+  position: relative;
+  top:520px;
+  white-space: nowrap;
+}
+
+.section2{
+  text-align: center;
+  font-size: 22px;
+  line-height: 28px;
+  color: #787f8c; 
+  font-weight: 100;
+}
+
+.middle{
+  white-space: nowrap;
+  position: relative;
+  top:580px;
+}
+
+.down{
+  color: #ffffff;
+  position: relative;
+  top:150px;
+  font-weight: 600;
+  font-size: 54px;
+}
+
+.btn{
+  position: relative;
+  top:165px;
+}
+
+.lead {
+  position: relative;
+  top:165px;
+}
+
+.jumbotron{
+  position: absolute;
+  height: 570px;
+  left: 0;
+  right: 0;
+  top:0px;
+}
+
+.tracking {
+  text-align: center;
+  font-size:30px;
+  color:#333333;
+  font-weight: 100;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right:0.0001%;
+    width:100%;
+    height:30px;
+    padding:5px;
+    background-color:#333333;
+  }
+
+  .footText{
+    color:#ffffff;
+    text-align: center;
+  }
+
+  .image{
+    background-image:url('/assets/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+  }
+
+  .manage{
+    color: #5c5c5c;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+
+  .transition {
+    text-align: center;
+    color: #5c5c5c;
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+  }
+
+  .transition2 {
+    text-align: center;
+    position: relative;
+    left: 6px;
+    bottom: 43px;
+    color: #5c5c5c;
+    opacity: 0;
+    -webkit-animation: fadeinout 4s linear forwards 4s;
+    animation: fadeinout 4s linear forwards 4s;
+  }
+
+  .transition3 {
+    text-align: center;
+    position: relative;
+    bottom: 85px;
+    color: #5c5c5c;
+    opacity: 0;
+    -webkit-animation: fadein 4s linear forwards 8s;
+    animation: fadein 4s linear forwards 8s;
+  }
+
+  @-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @-webkit-keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  @keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+
+  h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #5c5c5c;
+    font-size: 22px;
+  }
+
+  p{
+    font-size: 15px;
+    margin-bottom: 2em;
+    line-height: 1.6;
+    color: #787f8c;
+  }
+
+  #boxes{
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 310px;
+    top: 880px;
+  } 
+
+
+  #boxes .box{
+    position: relative;
+    float:right;
+    right:5.5%;
+    text-align: center;
+    width:30%;
+    padding:10px;
+  }
+
+  #boxes .box img{
+    width:100%;
+    max-width: 290px;
+    height:190px;
+    border-radius: 6px;
+  }
+
+
+  #boxes2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 900px;
+    margin-bottom: 100px;
+  } 
+
+  #boxes2 .box{
+    position: relative;
+    float:right;
+    right:5.5%;
+    text-align: center;
+    width:30%;
+    padding:10px;
+  }
+
+  #boxes2 .box img{
+    width:90px;
+    height:90px;
+  }
+
+  .started {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px; 
+    background-color: #2780e3;
+    border-color: #2780e3;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-decoration: none !important;
+  }
+
+  .wrap {
+    width:100px;
+    white-space: nowrap;
+    position: relative;
+    left:43%;
+    top: 930px;
+    margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    
+       h3 {
+          font-size: 1.2em;
+       }
+
+       #boxes .box{
+        position: relative;
+       }
+
+    }
+
+      @media only screen and (max-width: 547px) {
+
+        .down {
+          font-size: 27px;
+         }
+
+      }
+
+      @media only screen and (max-width: 707px) {
+
+      .wrap {
+        top:950px;
+       }
+
+       .started{
+        padding: 10px 15px;
+       }
+
+}
+
+      @media only screen and (max-width: 607px) {
+  
+        .wrap {
+          top:1000px;
+         }
+  
+         .started{
+          padding: 10px 15px;
+         }
+  
+}
+
+      @media only screen and (max-width: 527px) {
+  
+        .wrap {
+          top:1050px;
+         }
+  
+         .started{
+          padding: 10px 15px;
+         }
+  
+}
+
+      @media only screen and (max-width: 487px) {
+  
+        .wrap {
+          top:1140px;
+         }
+  
+         .started{
+          padding: 10px 15px;
+         }
+  
+}
+

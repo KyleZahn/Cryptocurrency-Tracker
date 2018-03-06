@@ -1,0 +1,38 @@
+.navbar{
+    background: transparent !important;
+    z-index: 10;
+    border-bottom: none;
+    border-top: none;
+    position:relative;
+    top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.95em;
+    font-weight: 600;
+}
+
+.navbar:hover{
+    background: transparent !important;
+}
+
+.logo {
+    position:relative;
+    top:-35px;
+    right:5px;
+    width:150px;
+    height:100px;
+  }
+
+  .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 5px 20px;
+    background: transparent !important;
+}
+
+    .nav>li>a:hover {
+        color:rgb(165, 165, 165);
+    }
+
+   .active {
+     border-bottom: solid rgb(165, 165, 165);
+   }
