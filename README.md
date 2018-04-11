@@ -17,7 +17,7 @@ The navbar, for example, will display differing items based upon the current use
     </div>
 ```
 
-The most important component of the SPA is the dashboard. Each time the dashboard is loaded, POST requests are made to the Coindesk API to receieve and display up-to-date pricing information to the user.
+The most important component of the SPA is the dashboard. Each time the dashboard is loaded, GET requests are made to the Coindesk API to receieve and display up-to-date pricing information to the user.
 ```
   ngOnInit() {
     this.loadUser();
